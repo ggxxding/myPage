@@ -1,10 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>hym</title>
+<!--定时器-->
+    <script>
+        function init(){
+            //书写轮播图片的定时功能
+            setInterval("changeImg()",3000);
+        }
+        //书写函数
+        var i=0;
+        function changeImg(){
+            i++;
+            //获取图片位置并设置src属性值
+            document.getElementById("img1").src=i+".jpg";
+            if(i==5){
+                i=0;
+            }
+        }
+    </script>
+
 </head>
-<body>
+
+<!--标题栏-->
+<body onload="init()">
+    <table width="1200px" align="center" cellpadding="0px" cellspacing="0px">
+        <tr>
+            <td>
+                <table border="0px" width="1400px">
+                    <tr height="50px">
+                        <td width="100%" align="center">
+                            <a href="#" > <font color="black" size="8" face="黑体" ><strong>H Y M</strong></font></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <table width="1200px" align="center"  cellpadding="2px" cellspacing="2px">
+        <tr height="35" >
+            <td width="100%" align="center" >
+                <a href="#Home"><font face="黑体" size="6">Home</font></a>&nbsp;&nbsp;
+                <a href="#About Me"><font face="黑体" size="6">About</font></a>&nbsp;&nbsp;
+                <a href="#Downloads"><font face="黑体" size="6">Downloads & Links</font></a>&nbsp;&nbsp;
+                <a href="#"><font face="黑体" size="6">Nothing</font></a>&nbsp;&nbsp;
+            </td>
+        </tr>
+        <!--轮播图-->
+        <tr>
+            <td>
+                <img src="1.jpg" width="100%"  id="img1"/>
+            </td>
+        </tr>
+    </table><br /><br />
+
+    <!--home段-->
+    <table  id="Home"  width="1400px" cellspacing="2px" cellpadding="2px" align="center">
+        <tr><th><font  face="微软雅黑" size="6"><strong>HOME</strong></font></th></tr><br /><br />
+        <tr>
+            <td align="center">
+                <a href="#" ><font face="微软雅黑" size="4">回到顶部</font></a><br />
+                <p align="center" ><font size="3" face="微软雅黑">没写好</font></p>
+                <br /><br />
+                <img src="C.png"/><br /><br />
+            </td>
+        </tr>
+    </table>
+
+    <!--About 段-->
+    <table width="1400px" cellspacing="2px" cellpadding="2px" align="center" id="About Me">
+        <tr align="center">
+            <td>
+                <font face="微软雅黑" size="6"><strong>About</strong></font><br />
+            </td>
+        </tr>
+        <tr align="center">
+            <td>
+                <a href="#" ><font face="微软雅黑" size="4">回到顶部</font></a><br />
+            </td>
+        </tr>
+    </table>
+
+
+    <table width="1000px" cellpadding="2px" cellspacing="2px" align="center">
+        <tr>
+            <td>
+                <p align="center" ><font size="5" face="微软雅黑"><strong>没写好</strong></font></p>
+            </td>
+        </tr>
+    </table><br />
+
+    <table width="1400px" cellpadding="0px" cellspacing="0px" align="center">
+        <tr>
+            <td>
+                <img src="121.jpg" width="700px" height="700px" align="center"/>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!--等着，我回来再写-->
+            </td>
+            <td>
+                <img src="9.jpg" width="700px" height="700px" align="center"/>
+            </td>               
+        </tr>       
+    </table><br /><br />
+
+    <!--Downloads段-->
+    <table  id="Downloads"  width="1400px" cellspacing="2px" cellpadding="2px" align="center">
+        <tr><th><font  face="微软雅黑" size="6"><strong>Downloads & Links</strong></font></th></tr><br /><br />
+        <tr>
+            <td align="center">
+                <a href="#" ><font face="微软雅黑" size="4">回到顶部</font></a><br />
+
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
 	<div><a href="https://www.jx3box.com/jx3dat/?pid=14149#/">云刀插件官网</a></div>
 	<div><a href="https://console.cnyixun.com/upload/post/2020/11/8/543629.jx3dat">【问宗密典】二卷2.40v【奉天证道】</a></div>
 	<div><a href="https://console.cnyixun.com/upload/post/2020/11/9/1629506.jx3dat">【问宗密典】二卷2.40v【奉天证道】内置版</a></div>
@@ -15,6 +128,19 @@
 	<div><a href="https://map.hydbk.com/">RDR2收藏家地图</a></div>
 	<div><a href="https://bk.hydbk.com/">RDR2植物地图</a></div>
 	<div><a href="https://www.3dmgame.com/gl/3760553_2.html/">RE2收集地图</a></div>
+            </td>
+        </tr>
+    </table>
 
+
+    <table width="1400px"  height="300px" bgcolor="black" cellpadding="6px" align="center">
+        <tr>
+            <td align="center">
+                <p align="center" ><font size="7" face="微软雅黑" color="white">HYM</font></p><br /><br /><br />
+                <a href="#" ><p align="center" ><font size="4" face="微软雅黑" color="white">回到顶部</font></p></a><br /><br /><br />
+                <p align="center" ><font size="4" face="微软雅黑" color="white">啊！</font></p>
+                <p align="center" ><font color="white" face="微软雅黑">Copyright © xxxx 个人网站. All rights reserved.</font></p>
+            </td>
+        </tr>
+    </table>
 </body>
-</html>
